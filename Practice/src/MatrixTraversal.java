@@ -27,11 +27,10 @@ public class MatrixTraversal {
 			}
 			System.out.println();
 		}
-		/*
-		 * System.out.println("\nRow major traversal:"); printRowMajor(mat, m, n);
-		 * System.out.println("\nColumn major traversal:"); printColumnMajor(mat, m, n);
-		 * System.out.println("\nZig-zag traversal:"); printZigZag(mat, m, n);
-		 */
+		
+		System.out.println("\nRow major traversal:"); printRowMajor(mat, m, n);
+		System.out.println("\nColumn major traversal:"); printColumnMajor(mat, m, n);
+		System.out.println("\nZig-zag traversal:"); printZigZag(mat, m, n);
 		System.out.println("\nSpiral traversal");
 		printSpiral(mat, m, n, (byte) 0, (byte) 0);
 	}
