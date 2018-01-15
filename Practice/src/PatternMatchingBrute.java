@@ -12,25 +12,25 @@ public class PatternMatchingBrute {
 		System.out.println("Enter pattern to be searched in string:");
 		String pattern = br.readLine();
 		int lenSrc = src.length(), lenPattern = pattern.length();
-		char[] arrSrc = src.toCharArray(), arrPattern = pattern.toCharArray();
-		int i = 0, j = 0;
+		int i = 0, j = 0, freq = 0;
 		long count = 1;
-		while (i < lenSrc && j < lenPattern) {
-			if (arrSrc[i] != arrPattern[j]) {
+		while (i < lenSrc) {
+			if (src.charAt(i) != pattern.charAt(j)) {
 				i -= j;
 				j = -1;
-				System.out.println(count);
 			}
 			++i;
 			++j;
+			if (j == lenPattern) {
+				j = 0;
+				++freq;
+			}
 			++count;
 		}
-		if (j == lenPattern) {
-			System.out.println("Pattern found at index: " + (i - j));
+		if (freq > 0) {
+			System.out.println("Pattern found " + freq + " times.\nIterations: " + count);
 		} else {
-			System.out.println("Pattern not found.");
+			System.out.println("Pattern not found.\nIterations: " + count);
 		}
-		System.out.println("\nLength of string: " + lenSrc + "\nLength of pattern: " + lenPattern
-				+ "\nIterations performed: " + count);
 	}
 }
