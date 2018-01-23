@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 /**
  * Contrasts the running time of Naive, Memoized and Tabulated approaches of
- * finding the {@code t th} term of the Fibonacci Sequence.
+ * finding the {@code t}th term of the Fibonacci Sequence.
  * 
  * @author Utsav
  */
@@ -63,12 +63,12 @@ public class Fibonacci {
 	}
 
 	/**
-	 * Uses naive technique for finding the {@code t th} term of the Fibonacci
+	 * Uses naive technique for finding the {@code t}th term of the Fibonacci
 	 * Sequence.
 	 * 
 	 * @param t
 	 *            the term number of Fibonacci Sequence (starting from 0).
-	 * @return the value of {@code t th} term.
+	 * @return the value of {@code t}th term.
 	 */
 	static long fibNaive(int t) {
 		if (t < 2)
@@ -84,12 +84,12 @@ public class Fibonacci {
 	}
 
 	/**
-	 * Uses memoization technique of Dynamic Programming for finding {@code t th}
+	 * Uses memoization technique of Dynamic Programming for finding {@code t}th
 	 * term of the Fibonacci Sequence.
 	 * 
 	 * @param t
 	 *            the term number of Fibonacci Sequence (starting from 0).
-	 * @return the value of {@code t th} term.
+	 * @return the value of {@code t}th term.
 	 * @author Utsav
 	 */
 	static long fibMemoi(int t) {
@@ -100,12 +100,12 @@ public class Fibonacci {
 	}
 
 	/**
-	 * Uses tabulation technique of dynamic programming for finding the {@code t th}
+	 * Uses tabulation technique of dynamic programming for finding the {@code t}th
 	 * term of the Fibonacci Sequence.
 	 * 
 	 * @param t
 	 *            the term number of Fibonacci Sequence (starting from 0).
-	 * @return the value of {@code t th} term.
+	 * @return the value of {@code t}th term.
 	 * @author Utsav
 	 */
 	static long fibTabul(int t) {
