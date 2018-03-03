@@ -8,10 +8,10 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-//TODO 1. significant optimization in approach.
 //TODO 2. multiple cities can have the same type..need to visit the closest city of given type in given direction.
 public class CityTourHackerEarth {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
